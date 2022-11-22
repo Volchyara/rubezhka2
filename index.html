@@ -34,7 +34,7 @@
             </div>
         </section>
         <section class="info">
-            <div class="info_">
+            <div class="info_" id="text">
                 <p><i>Дизайн студия "Advance Web" - это команда<br>профессионалов среди компьютерного дизайна
                         и<br>веб-программирования</i></p>
             </div>
@@ -51,19 +51,19 @@
         </section>
         <section class="images">
             <img src="https://luxe-host.ru/wp-content/uploads/2/d/2/2d2e9c906cec681b2b5e5532c233aa4e.png" alt=""
-                width="300" id="imgpos1">
-            <img src="http://bboom.pro/wp-content/uploads/2021/06/Razrabotka-saitov-3-1.jpg" alt="" width="300"
-                id="imgpos2">
+                width="400" id="imgpos1" onclick="firstText()">
+            <img src="http://bboom.pro/wp-content/uploads/2021/06/Razrabotka-saitov-3-1.jpg" alt="" width="400"
+                id="imgpos2" onclick="secondText()">
             <img src="https://ru.seaicons.com/wp-content/uploads/2015/06/Sites-2-icon.png" alt="" width="300"
-                id="imgpos3">
+                id="imgpos3" onclick="thirdText()">
             <img src="https://global-uploads.webflow.com/60a35497ea15cf45782248b1/6168df92ff22145b35f938f4_30%20%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2.png"
-                alt="" width="300" id="imgpos4">
-            <img src="https://вип-сервис.рф/images/uslugi/dizajn-and-programmirovanie.jpg" alt="" width="300"
-                id="imgpos5">
+                alt="" width="400" id="imgpos4" onclick="forthText()">
+            <img src="https://вип-сервис.рф/images/uslugi/dizajn-and-programmirovanie.jpg" alt="" width="400"
+                id="imgpos5" onclick="fifthText()">
         </section>
     </header>
     <main>
-       <section class="secondinfo">
+        <section class="secondinfo">
             <div class="column-info">
                 <h1><i>1</i></h1>
                 <h2><i>Графический дизайн</i></h2>
@@ -154,9 +154,6 @@
         padding-bottom: 220px;
     }
 
-    body {
-        /* background-color: rgba(10, 10, 10, 0.886); */
-    }
 
     a {
         text-decoration: none;
@@ -324,7 +321,8 @@
     }
 
     #change {
-        padding: 27px 30px;
+        font-size: 17px;
+        padding: 44px 30px;
     }
 
     .column-info {
@@ -358,3 +356,34 @@
             transition-duration: 0.5s;
         }
     }
+</style>
+<script>
+    alert('Айгуль Манасбековна, нажимайте на картинки чтобы менялся текст под менюшкой, Спасибо за внимание!')
+
+    let text_ = document.getElementById('text')
+
+    function firstText() {
+        text_.innerHTML =
+            '<p><i>Дизайн студия "Advance Web" - это команда<br>профессионалов среди компьютерного дизайна и<br>веб-программирования</i></p>';
+    }
+
+    function secondText() {
+        text_.innerHTML =
+            '<p><i>Дизайн студия "Advance Web" - это удобный сайт<br>в котором делают качественные веб-разработки<br>профессионалы</i></p>';
+    }
+
+    function thirdText() {
+        text_.innerHTML =
+            '<p><i>Дизайн студия "Advance Web" - это принятие заказов не только по снг,<br>но и all over the WORLD !<br></i></p>';
+    }
+
+    function forthText() {
+        text_.innerHTML = '<p><i> Делаем с любовью ^-^ </i>💖</p>'
+    }
+
+    function fifthText() {
+        text_.innerHTML = '<p><i>На связи 24/7</i> </p>'
+    }
+</script>
+
+</html>
