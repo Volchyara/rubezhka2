@@ -63,8 +63,39 @@
         </section>
     </header>
     <main>
-        <section class="">
-
+       <section class="secondinfo">
+            <div class="column-info">
+                <h1><i>1</i></h1>
+                <h2><i>Графический дизайн</i></h2>
+                <p>Сайт рыбатекст поможет дизайнеру,<br>верстальщику,<br>вебмастеру сгенерировать<br>несколько абзацев
+                    более
+                    менее<br>осмысленного текста рыбы<br>на русском языке,<br>а начинающему оратору<br>отточить навык
+                    публичных</p>
+            </div>
+            <div class="column-info">
+                <h1><i>2</i></h1>
+                <h2><i>Создание сайтов</i></h2>
+                <p>Сайт рыбатекст поможет дизайнеру,<br>верстальщику,<br>вебмастеру сгенерировать<br>несколько абзацев
+                    более
+                    менее<br>осмысленного текста рыбы<br>на русском языке,<br>а начинающему оратору<br>отточить навык
+                    публичных</p>
+            </div>
+            <div class="column-info">
+                <h1><i>3</i></h1>
+                <h2 id="change"><i>Поисковое продвижение сайтов</i></h2>
+                <p>Сайт рыбатекст поможет дизайнеру,<br>верстальщику,<br>вебмастеру сгенерировать<br>несколько абзацев
+                    более
+                    менее<br>осмысленного текста рыбы<br>на русском языке,<br>а начинающему оратору<br>отточить навык
+                    публичных</p>
+            </div>
+            <div class="column-info">
+                <h1><i>4</i></h1>
+                <h2><i>Фото услуги</i></h2>
+                <p>Сайт рыбатекст поможет дизайнеру,<br>верстальщику,<br>вебмастеру сгенерировать<br>несколько абзацев
+                    более
+                    менее<br>осмысленного текста рыбы<br>на русском языке,<br>а начинающему оратору<br>отточить навык
+                    публичных</p>
+            </div>
         </section>
     </main>
 </body>
@@ -120,7 +151,7 @@
 
     header {
         background-color: rgba(10, 10, 10, 0.886);
-        padding-bottom: 70px;
+        padding-bottom: 220px;
     }
 
     body {
@@ -135,6 +166,17 @@
         margin: 0;
     }
 
+    main {
+        background: linear-gradient(rgba(10, 10, 10, 0.886), rgba(255, 255, 255, 0.934));
+    }
+
+    main h1 {
+        margin: 0;
+    }
+
+    main p {
+        margin: 0;
+    }
 
     .logo a {
         color: rgba(255, 255, 255, 0.934);
@@ -256,6 +298,55 @@
 
     #imgpos5:hover {
         border-color: rgba(21, 19, 72, 0.902);
+    }
+
+    .column-info h1 {
+        font-size: 100px;
+        font-family: Arial;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        top: 110px;
+    }
+
+    .column-info h2 {
+        position: relative;
+        z-index: 2;
+        background-color: rgba(232, 25, 25, 0.795);
+        width: 80%;
+        text-align: center;
+        padding: 40px 30px;
+        font-size: 24px;
+        border-radius: 30px;
+        font-family: Arial;
+        color: white;
+        margin: 0;
+    }
+
+    #change {
+        padding: 27px 30px;
+    }
+
+    .column-info {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-info p {
+        background-color: gray;
+        width: 95%;
+        text-align: center;
+        border-radius: 30px;
+        padding: 30px 0px;
+        color: rgba(255, 255, 255, 0.913);
+    }
+
+    .secondinfo {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 170px;
     }
 
     @media(max-width:1600px) {
