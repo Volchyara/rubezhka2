@@ -20,13 +20,13 @@
                     <div class="menu-section">
                         <ul>
                             <li><a href=""><i>О компании</i></a></li>
-                            <li>|</li>
+                            <li id="stick">|</li>
                             <li><a href=""><i>Услуги</i></a></li>
-                            <li>|</li>
+                            <li id="stick">|</li>
                             <li><a href=""><i>Цены</i></a></li>
-                            <li>|</li>
+                            <li id="stick">|</li>
                             <li><a href="" id="red"><i>Портфолио</i></a></li>
-                            <li>|</li>
+                            <li id="stick">|</li>
                             <li><a href=""><i>Контакты</i></a></li>
                         </ul>
                     </div>
@@ -356,10 +356,85 @@
             transition-duration: 0.5s;
         }
     }
+
+    @media(max-width:550px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .menu-section {
+            width: 120%;
+            position: relative;
+            right: 20px;
+        }
+
+        .menu-section ul {
+            flex-direction: column;
+        }
+
+        .logo {
+            position: relative;
+            right: 20px;
+        }
+
+        .images {
+            flex-direction: column;
+            position: static;
+        }
+
+        #imgpos3 {
+            left: 30px;
+        }
+
+        #imgpos1 {
+            left: 20px;
+        }
+
+        #imgpos2 {
+            top: 30px;
+        }
+
+        #imgpos4 {
+            top: 80px;
+            left: 10px;
+        }
+
+        #imgpos5 {
+            left: 30px;
+            top: 110px;
+        }
+
+        .secondinfo {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column-info h2 {
+            margin: 0;
+        }
+
+        .column-info p {
+            margin: 0;
+        }
+
+        .column-info {
+            margin-left: 20px;
+        }
+
+        #stick {
+            display: none;
+        }
+
+        li {
+            margin: 10px 0px;
+        }
+
+        .info {
+            flex-direction: column;
+        }
+    }
 </style>
 <script>
-    alert('Айгуль Манасбековна, нажимайте на картинки чтобы менялся текст под менюшкой, Спасибо за внимание!')
-
     let text_ = document.getElementById('text')
 
     function firstText() {
